@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survival Bracelets Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: navy;
+            color: #fff; /* Changed text color to white */
+            margin: 0;
+            padding: 0;
+            position: relative; /* Make the body relative for absolute positioning */
+        }
+
+        header {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap; /* Allow products to wrap on smaller screens */
+            justify-content: center; /* Center products horizontally */
+        }
+
+        .product {
+            flex: 0 0 calc(33.33% - 20px); /* Three products per row with spacing */
+            margin: 0 10px 20px; /* Add spacing between products */
+            text-align: center;
+        }
+
+        .product-box {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            max-width: 300px;
+            margin: 0 auto; /* Center product box horizontally */
+        }
+
+        .product:hover .product-box {
+            transform: translateY(-5px);
+        }
+
+        .product-image img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .price {
+            font-weight: bold;
+            color: navy; /* Changed price color to navy blue */
+        }
+
+        .description {
+            font-size: 14px; /* Smaller font size for description */
+            margin-top: 10px; /* Add some space between description and price */
+            color: navy; /* Set description color to navy blue */
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        /* Fancy donate button styling */
+        .donate-button {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+            box-shadow: 0 4px #358c36;
+            transition-duration: 0.4s;
+        }
+
+        .donate-button:hover {
+            background-color: #45a049;
+            box-shadow: 0 8px #358c36;
+            transform: translateY(-50%) translateY(-4px);
+        }
+
+        .all-rights-reserved {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Survival Bracelets Store</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="product">
+            <div class="product-box">
+                <h2>Keychain</h2>
+                <img src="6.jpeg" alt="Keychain">
+                <p class="description">Durable keychain for everyday use.</p>
+                <p class="price">$5.00</p>
+                <a href="https://forms.gle/vSSCmoqUiNNjrh6q6"><button>Buy Now</button></a>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-box">
+                <h2>Survival Bracelet 1</h2>
+                <img src="4.jpeg" alt="Survival Bracelet 1">
+                <p class="description">Versatile survival bracelet with essential tools.</p>
+                <p class="price">$15.00</p>
+                <a href="https://forms.gle/7ge3uhT6qTm95s8L7"><button>Buy Now</button></a>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-box">
+                <h2>Survival Bracelet 2</h2>
+                <img src="5.jpeg" alt="Survival Bracelet 2">
+                <p class="description">Premium-quality survival bracelet for outdoor enthusiasts.</p>
+                <p class="price">$25.00</p>
+                <a href="https://forms.gle/ZAfopmzzY13EsyG7A"><button>Buy Now</button></a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p class="all-rights-reserved">&copy; 2024 Survival Bracelets Store. All rights reserved.</p>
+        <!-- Fancy Donate button -->
+        <button class="donate-button" onclick="window.location.href='https://www.paypal.com/ncp/payment/C474MBZ4JC84S'">Donate</button>
+    </footer>
+</body>
+</html>
+
